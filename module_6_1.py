@@ -26,15 +26,21 @@ class Plant: # родительский класс Plant
 
 class Mammal(Animal): # наследуемый класс Mammal для Animal
 
-    def eat(self, food): # обращение к функции def eat класса Animal
+    pass #  вызывать заново метод eat не нужно в дочерних классах. Если метод никак не меняется и
+    # просто вызывает родительский - то это происходит по умолчанию и не нуждается в дополнительной перезаписи
 
-        return Animal.eat(self, food) # возврат к функции def eat класса Animal
+    #def eat(self, food): # обращение к функции def eat класса Animal
+
+        #return Animal.eat(self, food) # возврат к функции def eat класса Animal
 
 class Predator(Animal): # наследуемый класс Predator для Animal
 
-    def eat(self, food): # обращение к функции def eat класса Animal
+    pass #  вызывать заново метод eat не нужно в дочерних классах. Если метод никак не меняется и
+    # просто вызывает родительский - то это происходит по умолчанию и не нуждается в дополнительной перезаписи
 
-        return Animal.eat(self, food) # возврат к функции def eat класса Animal
+    #def eat(self, food): # обращение к функции def eat класса Animal
+
+       # return Animal.eat(self, food) # возврат к функции def eat класса Animal
 
 class Flower(Plant): # наследуемый класс Flower для Plant
 

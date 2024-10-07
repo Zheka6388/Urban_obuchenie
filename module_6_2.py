@@ -27,7 +27,7 @@ class Vehicle:
         # результаты методов: get_model, get_horsepower, get_color,get_owner. "+" добавляем элемент \n в конце, для
         # того, чтобы разделить действия вывода результата
 
-    def set_color(self, new_color:str): # Метод set_color - принимает аргумент new_color(str)
+    def set_color(self, new_color): # Метод set_color - принимает аргумент new_color(str)
         list = [] # создаём пустой список
         for i in self.__COLOR_VARIANTS: # присваиваем переменной i атрибут __COLOR_VARIANTS
             list.append(i.lower()) # добавить новый элемент в нижнем регистре в список

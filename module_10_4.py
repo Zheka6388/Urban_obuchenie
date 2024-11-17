@@ -22,10 +22,7 @@ class Cafe: # кафе, в котором есть определённое ко
     def __init__(self, *tables: Table):
         self.tables = tables # столы в этом кафе(любая коллекция).
         self.queue = Queue() # очередь (объект класса Queue)
-
-
-
-
+        
     def guest_arrival(self, *guests: Guest): # методам guest_arrival: (прибытие гостей)
         for guest in guests: # цикл for для гостя из списка гостей
             vacant_table = False # изначально свободных столов нет
